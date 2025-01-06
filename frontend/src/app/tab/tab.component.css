@@ -1,0 +1,176 @@
+.background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #e0c3fc, #8ec5fc);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+}
+
+.user-management-container {
+    padding: 20px;
+    background-color: white;
+    height: 90%;
+    width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    background: white;
+    border-radius: 8px;
+}
+
+.status {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.status.pending {
+    color: #ff9900;
+    background-color: #fff5e6;
+}
+
+.status.completed {
+    color: #28a745;
+    background-color: #e6f7f1;
+}
+
+.title {
+    color: black;
+}
+
+.subtitle{
+    font-size: 160%;
+    font-weight: 700;
+}
+
+.controls{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filters {
+    display: flex;
+    flex-direction: row;
+    margin-right: 1%;
+    gap: 30px;
+    align-items: center;
+    .search-field {
+        margin: 0;
+      }
+      
+      div {
+        margin-bottom: 2.5%;
+      }
+  }
+
+  .add_user {
+    background-color: black;
+    color: white;
+    padding: 10px 15px; /* Ajuste l'espace intérieur */
+    border-radius: 12px; /* Coins légèrement arrondis */
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Aligne verticalement icône et texte */
+    gap: 10px; /* Ajoute de l'espace entre l'icône et le texte */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ombre douce */
+    transition: transform 0.2s, box-shadow 0.2s; /* Effet smooth au hover */
+    cursor: pointer; /* Indique une action possible */
+  }
+  
+  .add_user:hover {
+    transform: translateY(-3px); /* Légère élévation au hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Accentue l'ombre au hover */
+  }
+  
+  .add_user mat-icon {
+    font-size: 24px; /* Taille de l'icône standard */
+    color: white; /* Garde l'icône en blanc */
+  }
+  
+  .add_user p {
+    font-size: 16px; /* Taille de texte confortable */
+    font-weight: 500; /* Texte légèrement en gras */
+    margin: 0; /* Supprime les marges par défaut */
+    display: flex;
+    align-items: center; /* Centre verticalement le texte */
+  }
+  
+
+  .filter {
+    background-color: white;
+    border: solid 1px black;
+    padding: 10px 15px; /* Plus précis pour une meilleure apparence */
+    border-radius: 12px; /* Bordures légèrement arrondies */
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Aligne verticalement l'icône et le texte */
+    gap: 10px; /* Un peu plus d'espace entre l'icône et le texte */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre douce */
+    transition: transform 0.2s, box-shadow 0.2s; /* Animation sur hover */
+    cursor: pointer; /* Change le curseur pour indiquer que c'est interactif */
+  }
+  
+  .filter:hover {
+    transform: translateY(-3px); /* Légère élévation au hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Accentue l'ombre au hover */
+  }
+  
+  .filter mat-icon {
+    font-size: 24px; /* Assure une taille cohérente pour l'icône */
+    color: black; /* Icône en noir pour respecter vos couleurs */
+  }
+  
+  .filter p {
+    font-size: 16px; /* Ajuste la taille de la police */
+    font-weight: 500; /* Donne un peu plus d'importance au texte */
+    margin: 0; /* Supprime les marges par défaut */
+    color: black; /* Couleur du texte en noir */
+  }
+  
+  .user-photo {
+    width: 40px; /* Taille du cercle */
+    height: 40px;
+    border-radius: 50%; /* Rendre l'image ronde */
+    overflow: hidden; /* S'assurer que tout débordement est coupé */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Ajout d'une légère ombre */
+  }
+  
+  .user-photo img {
+    width: 90%; /* Faire en sorte que l'image occupe tout le cercle */
+    height: 90%;
+    object-fit: cover; /* Garder le contenu proportionné */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .mat-elevation-z8 {
+    border-radius: 8px;
+  }
+  
