@@ -30,12 +30,12 @@ services:
       TYPEORM_DATABASE: mydatabase
       TYPEORM_SYNCHRONIZE: 'true'
 
-  #frontend:
-    #build: 
-      #context: ./frontend
-      #dockerfile: Dockerfile
-    #ports:
-      #- '8080:80'
+  frontend:
+    build: 
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - '8080:80'
 
   adminer:
     image: adminer
