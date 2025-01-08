@@ -8,9 +8,7 @@ export class ApiCallService {
 
   constructor(private httpClient: HttpClient) { }
 
-  private apiUrl = "http://localhost:3000"
-
   get_data(){
-    return this.httpClient.post<any>(`${this.apiUrl}/data`, {});
+    return this.httpClient.get<any>("http://localhost:3000/data", {});
   }
 }

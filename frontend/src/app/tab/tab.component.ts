@@ -25,7 +25,7 @@ import { ApiCallService } from '../services/api-call.service';
     MatCheckboxModule,
     MatIconModule,
     MatPaginatorModule,
-    MatDialogModule],
+    MatDialogModule,],
   templateUrl: './tab.component.html',
   styleUrl: './tab.component.css'
 })
@@ -41,6 +41,11 @@ export class TabComponent implements OnInit{
   ngOnInit(){
     this.apiCallService.get_data().subscribe((data) => {
       this.users = data;
+      this.users.forEach(user => {
+        if (!user.photo){
+          user.photo = "https://avatar.iran.liara.run/public";
+        }
+      })
       this.dataSource.data = this.users;
     })
   }
